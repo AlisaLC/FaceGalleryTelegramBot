@@ -1,6 +1,6 @@
 # FaceGalleryTelegramBot
 A Telegram bot to find your face among all the pictures in a gallery channel. it uses `Multi-Task Cascaded Convolutional Neural Networks` implemented in `facenet-pytorch`.
-it also uses `pyrogram` for Telegram API. Credits to Mahdi Samiee and Iman Mohammadi for the idea.
+it also uses `pyrogram` for Telegram API. Credits to [Mahdi Samiee](https://github.com/mmsamiei) and [Iman Mohammadi](https://github.com/imanm02) for the idea.
 ## Installation
 First we have to install `numpy`, `cv2`, and `torch`. then we can run the command:
 `pip install facenet-pytorch pyrogram`
