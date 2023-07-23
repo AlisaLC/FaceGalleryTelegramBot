@@ -16,10 +16,10 @@ mtcnn = MTCNN(
 )
 resnet = InceptionResnetV1(pretrained='vggface2').eval().to(device)
 
-API_ID = None # your telegram api id from my.telegram.org
-API_HASH = None # your telegram api hash from my.telegram.org
-BOT_TOKEN = None # your telegram bot token from @BotFather
-proxy = None # your proxy settings, can be None
+API_ID = None  # your telegram api id from my.telegram.org
+API_HASH = None  # your telegram api hash from my.telegram.org
+BOT_TOKEN = None  # your telegram bot token from @BotFather
+proxy = None  # your proxy settings, can be None
 
 app = Client("galley_bot", api_id=API_ID, api_hash=API_HASH,
              bot_token=BOT_TOKEN, proxy=proxy)
@@ -63,7 +63,6 @@ async def start_find(client, message):
     photo = message.photo
     print(photo)
     image = await client.download_media(photo.file_id)
-    i = 0
     try:
         embedding = get_embeddings(image)
         if len(embedding) == 0:
